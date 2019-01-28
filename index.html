@@ -195,10 +195,10 @@ function update()
 
 // create a function p() that passes through the points (0,p0), (1,p1), (2,p2)
 //  and evaluate that function at time t.
-//function parabolaEvaluate(p0, p1, p2, t)
-//{
-	//return ( 0.5*(p0 - 2*p1 + p2) )*t*t + ( -0.5*(3*p0 - 4*p1 + p2) )*t + ( p0 );
-//}
+function parabolaEvaluate(p0, p1, p2, t)
+{
+	return ( 0.5*(p0 - 2*p1 + p2) )*t*t + ( -0.5*(3*p0 - 4*p1 + p2) )*t + ( p0 );
+}
 
 function parabolicPath( pointStart, pointEnd, time )
 {
