@@ -209,9 +209,9 @@ function parabolicPath( pointStart, pointEnd, time )
 		//parabolaEvaluate( pointStart.y, pointMiddle.y, pointEnd.y, time ),
 		//parabolaEvaluate( pointStart.z, pointMiddle.z, pointEnd.z, time )
 
-		parabolaEvaluate( 2, 2, 2, time ),
-		parabolaEvaluate( 4, 4, 4, time ),
-		parabolaEvaluate( 2, 2, 2, time )
+		parabolaEvaluate( pointStart.x, pointStart.x, pointStart.x, time ),
+		parabolaEvaluate( pointStart.y, pointStart.y, pointStart.y, time ),
+		parabolaEvaluate( pointStart.z, pointStart.z, pointStart.z, time )
 	);
 }
 
