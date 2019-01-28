@@ -197,7 +197,7 @@ function update()
 //  and evaluate that function at time t.
 function parabolaEvaluate(p0, p1, p2, t)
 {
-	return ( 0*(p0 - 2*p1 + p2) )*t*t + ( -0*(3*p0 - 4*p1 + p2) )*t + ( p0 );
+	return ( 0.5*(p0 - 2*p1 + p2) )*t*t + ( -0.5*(3*p0 - 4*p1 + p2) )*t + ( p0 );
 	//return ( 0.5*(p0 - 2*p1 + p2) )*t*t + ( -0.5*(3*p0 - 4*p1 + p2) )*t + ( p0 );
 }
 
@@ -209,9 +209,9 @@ function parabolicPath( pointStart, pointEnd, time )
 		//parabolaEvaluate( pointStart.y, pointMiddle.y, pointEnd.y, time ),
 		//parabolaEvaluate( pointStart.z, pointMiddle.z, pointEnd.z, time )
 
-		parabolaEvaluate( pointStart.x, pointStart.x, pointStart.x, time ),
-		parabolaEvaluate( pointStart.y, pointStart.y, pointStart.y, time ),
-		parabolaEvaluate( pointStart.z, pointStart.z, pointStart.z, time )
+		parabolaEvaluate( pointMiddle.x, pointMiddle.x, pointMiddle.x, time ),
+		parabolaEvaluate( pointMiddle.y, pointMiddle.y, pointMiddle.y, time ),
+		parabolaEvaluate( pointMiddle.z, pointMiddle.z, pointMiddle.z, time )
 	);
 }
 
